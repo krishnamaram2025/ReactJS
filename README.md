@@ -21,5 +21,6 @@ tar -cvzf build.tar.gz build
 scp -i ../../id_rsa build.tar.gz centos@54.201.83.107:
 ssh -i ../../id_rsa centos@54.201.83.107
 tar -xvzf build.tar.gz
-mv build/* /usr/share/nginx/html
+sudo rm -rf /usr/share/nginx/html/*
+sudo mv build/* /usr/share/nginx/html
  ``` 
