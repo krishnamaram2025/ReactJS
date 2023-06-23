@@ -19,8 +19,8 @@ tar -cvzf build.tar.gz build
 * Deploy ReactJS App in Nginx server
 ```
 copy the above files which resides in build folder to Nginx server
-scp -i ../../id_rsa build.tar.gz centos@54.201.83.107:
-ssh -i ../../id_rsa centos@54.201.83.107
+scp  build.tar.gz centos@PUBLIC_IP_OF_NGINX:
+ssh  centos@PUBLIC_IP_OF_NGINX
 tar -xvzf build.tar.gz
 sudo rm -rf /usr/share/nginx/html/*
 sudo mv build/* /usr/share/nginx/html
