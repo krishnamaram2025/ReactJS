@@ -8,6 +8,7 @@ sudo yum install –y nodejs
 
 * Make build in Windows machine
 ```
+Make sure to install NodeJS
 git clone https://github.com/krishnamaram2025/ReactJS.git && cd ReactJS
 gunicorn server ip in src/services/StudentService.js
 npm install
